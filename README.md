@@ -3,3 +3,4 @@ I have some of the commented for no reason other than "why not", if you somehow 
 
 btw just if you see any dumb comments, just try to not kill me for it. i don't really know what im talking about a lot of the times
 i just leave the comments so when i go back to read them i can understand them in the way i did, if that makes sense
+
