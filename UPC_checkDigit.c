@@ -4,7 +4,6 @@ program to calculate the check digit on those barcode things on stuff you
 examples
     0 13800 15173 5
     0 51500 24128 ?
-    0 31200 01005 ?
 the ? is the check digit that this program is supposed to calculate
 */
 int main(void) {
