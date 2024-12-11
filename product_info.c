@@ -1,25 +1,23 @@
 #include <stdio.h>
 /*
-i have no idea what structs are but i think i can remake this later on when i learn structs
-cause yk like instea of doing y m and d, i can just have a structure kinda thing that holds the date for me right?
-or is that not how it works wkldajwdahw
+i have no idea what structs are but i think i can remake this later on when i
+learn structs cause yk like instea of doing y m and d, i can just have a
+structure kinda thing that holds the date for me right? or is that not how it
+works wkldajwdahw
 */
 int main(void) {
-    int itmNum;
-    double unitPrice;
-    int y,m,d;
-    printf("Enter product number: ");
+    int itmNum, y, m, d;
+    double price;
+    printf("Enter item number: ");
     scanf("%d", &itmNum);
-    printf("\nEnter unit price: ");
-    scanf("%lf", &unitPrice);
-    printf("\nEnter purchase date (yyyy/mm/dd): ");
-    scanf("%d/%d/%d",&y,&m,&d);
-    printf(
-        "\n\n"
-        "Item        Unit Price        Purchase Date\n"
-        "%d          $%.2lf            %04d/%02d/%02d", itmNum, unitPrice, y,d,m
-    );
+    printf("Enter unit price: ");
+    scanf("%lf", &price);
+    printf("Enter purchase date (yyyy/mm/dd): ");
+    scanf("%d/%d/%d", &y, &m, &d);
+
+    printf("\nItem#        Unit Price        Purchase Date\n"
+           "%3d           %.2lf             %4d/%.2d/%.2d\n",
+           itmNum, price, y, m, d);
 
     return 0;
 }
-
