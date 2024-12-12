@@ -2,8 +2,7 @@
 /*
 get the circumference of a circle
 */
-int main(){
-
+int main() {
 
     const double PI = 3.14159265358979;
     double radius;
@@ -13,10 +12,9 @@ int main(){
     printf("Enter the radius of a circle:\t");
     scanf("%lf", &radius);
 
-    circumference = 2 * PI * radius;        // formula for the circumference
-    area = PI * radius * radius;            // formula for the area
+    circumference = 2 * PI * radius; // formula for the circumference
+    area = PI * radius * radius;     // formula for the area
     printf("\nCircumference:\t%lf\n", circumference);
     printf("Area:\t\t%lf", area);
     return 0;
 }
-

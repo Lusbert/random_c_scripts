@@ -12,15 +12,17 @@ int main(void) {
     scanf("%d", &columns);
 
     int c;
-    while ( (c = getchar()) != '\n' && c != EOF ) { }
-    // could've done another scanf() to have it skip that but i didnt see anyone recommend that so ig its even more "unsafe"
+    while ((c = getchar()) != '\n' && c != EOF) {
+    }
+    // could've done another scanf() to have it skip that but i didnt see anyone recommend that so ig its even more
+    // "unsafe"
 
     printf("Enter a symbol to use:\t\t");
     scanf("%c", &symbol);
 
-    for(int i = 1; i <= rows; i++) {
+    for (int i = 1; i <= rows; i++) {
 
-        for(int j = 1; j <= columns; j++) {
+        for (int j = 1; j <= columns; j++) {
             printf("%c", symbol);
         }
         printf("\n");
@@ -28,4 +30,3 @@ int main(void) {
 
     return 0;
 }
-

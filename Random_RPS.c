@@ -1,27 +1,26 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <time.h>
 void clear_scanf(void) {
     int c;
-    while ( (c = getchar()) != '\n' && c != EOF ) { }   // i have no fucking idea what this does
+    while ((c = getchar()) != '\n' && c != EOF) {
+    } // i have no fucking idea what this does
 }
 void RPS_rand(int bleh, int *hand) {
-    if (bleh == 0){
+    if (bleh == 0) {
         printf("\nI did Rock");
         *hand = 0;
-    }
-    else if (bleh == 1) {
+    } else if (bleh == 1) {
         printf("\nI did Paper");
         *hand = 1;
-    }
-    else {
+    } else {
         printf("\nI did Scissors");
         *hand = 2;
     }
 }
 void U_RPS(char input, int *hand) {
-    switch(input) {
+    switch (input) {
         case 'R':
             printf("\nYou did Rock");
             *hand = 0;
@@ -44,19 +43,19 @@ void U_RPS(char input, int *hand) {
 | 0 | 1 | 2 |
 
 possible RPS outcomes:
-	Y M || (Y)ou (M)achine
+        Y M || (Y)ou (M)achine
 Tie
-	0 0
-	1 1
-	2 2
+        0 0
+        1 1
+        2 2
 Win
-	0 2
-	1 0
-	2 1
+        0 2
+        1 0
+        2 1
 Lose
-	0 1
-	1 2
-	2 1
+        0 1
+        1 2
+        2 1
 */
 int main(void) {
     char u_input;
@@ -80,27 +79,22 @@ int main(void) {
         // check if its a Tie, Win or Lose
         if (U_hand == RPS_hand) {
             printf("\nIt's a tie\n");
-        }
-        else if ((U_hand == 0 && RPS_hand == 2) || (U_hand == 1 && RPS_hand == 0) || (U_hand == 2 && RPS_hand == 1)) {
+        } else if ((U_hand == 0 && RPS_hand == 2) || (U_hand == 1 && RPS_hand == 0) || (U_hand == 2 && RPS_hand == 1)) {
             printf("\nYou won\n");
             score++;
             printf("current score: %d\n", score);
-        }
-        else {
+        } else {
             printf("\nYou lost\n");
             score--;
             printf("current score: %d\n", score);
         }
         // printf("\n\nU_hand: %d \nRPS_hand: %d\n", U_hand, RPS_hand);
         // literally just used this to see what the variables are so that i can make sure its working
-    }
-    while(score > -3 && score < 3);
+    } while (score > -3 && score < 3);
     if (score > 0) {
         printf("\ndamn, luck was LITERALLY on your side\n");
-    }
-    else {
+    } else {
         printf("\nig it's your unlucky day today.\n");
     }
     return 0;
 }
-

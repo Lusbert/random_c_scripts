@@ -13,7 +13,7 @@ int findMax(int x, int y) {
         return y;
     }
     */
-    return (x > y) ? x : y;     // basically if `x > y` return x and if false return y
+    return (x > y) ? x : y; // basically if `x > y` return x and if false return y
 }
 
 int main(void) {
@@ -22,4 +22,3 @@ int main(void) {
 
     return 0;
 }
-

@@ -11,8 +11,8 @@ int main(void) {
 
     printf("Enter an Operator [+ - * /]\t");
     scanf("%c", &operator);
-// check if the operator typed is valid or not
-    switch(operator) {
+    // check if the operator typed is valid or not
+    switch (operator) {
         case '+':
             break;
         case '-':
@@ -32,7 +32,7 @@ int main(void) {
     printf("\nEnter the 2nd number:\t\t");
     scanf("%lf", &num2);
 
-    switch(operator) {
+    switch (operator) {
         case '+':
             result = num1 + num2;
             printf("\n%.2lf", result);
@@ -55,4 +55,3 @@ int main(void) {
     }
     return 0;
 }
-

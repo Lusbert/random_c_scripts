@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main(void) {
-    char cars[][10] = {"mustang","Corvette","Camaro"};
+    char cars[][10] = {"mustang", "Corvette", "Camaro"};
 
     printf("%s\n", cars[0]);
 
@@ -14,4 +14,3 @@ int main(void) {
 
     return 0;
 }
-

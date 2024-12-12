@@ -1,9 +1,10 @@
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
 
 void clear_scanf(void) {
     int c;
-    while ( (c = getchar()) != '\n' && c != EOF ) { }   // i have no fucking idea what this does
+    while ((c = getchar()) != '\n' && c != EOF) {
+    } // i have no fucking idea what this does
 }
 
 int main(void) {
@@ -18,7 +19,7 @@ int main(void) {
         u_input = toupper(u_input);
         failed = 0;
 
-        switch(u_input) {
+        switch (u_input) {
             case 'R':
                 printf("I do Paper, i win\n\n");
                 clear_scanf();
@@ -39,13 +40,11 @@ int main(void) {
 
         if (failed == 0) {
             score++;
+        } else {
         }
-        else {}
-    }
-    while(score < 3);
+    } while (score < 3);
 
     printf("\nhaha yes, i finally won the rigged game of RPS\n");
 
     return 0;
 }
-

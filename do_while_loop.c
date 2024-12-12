@@ -7,14 +7,12 @@ int main(void) {
     do {
         printf("enter a number above 0.\t");
         scanf("%d", &num);
-        if(num > 0) {
+        if (num > 0) {
             sum = sum + num;
         }
-    }
-    while(num > 0);
+    } while (num > 0);
 
     printf("\nsum:\t%d", sum);
 
     return 0;
 }
-

@@ -2,9 +2,7 @@
 /*
 script for squaring a number
 */
-double square(double x) {
-    return x * x;
-}
+double square(double x) { return x * x; }
 
 int main(void) {
     double num;
@@ -15,4 +13,3 @@ int main(void) {
 
     return 0;
 }
-

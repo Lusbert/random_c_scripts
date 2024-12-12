@@ -16,15 +16,12 @@ int main(void) {
 
     for (int i = 0; i < num2; i++) {
 
-        if (i < num2-1){
+        if (i < num2 - 1) {
             printf("%d + ", num1);
-        }
-        else if (i == num2-1){
+        } else if (i == num2 - 1) {
             printf("%d", num1);
         }
-
     }
 
     return 0;
 }
-

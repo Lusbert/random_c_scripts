@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(void) {
-    int m,d,y;
+    int m, d, y;
     printf("Enter a date (mm/dd/yyyy): ");
-    scanf("%d/%d/%d", &m,&d,&y);
-    printf("now in yyyy/mm/dd: %04d/%02d/%02d", y,m,d);
+    scanf("%d/%d/%d", &m, &d, &y);
+    printf("now in yyyy/mm/dd: %04d/%02d/%02d", y, m, d);
 
     /*
     ok so for example, if `x = 2`, and i want it to be returned as a 02, i can just use %02d
@@ -15,4 +15,3 @@ int main(void) {
 
     return 0;
 }
-
