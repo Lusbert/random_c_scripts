@@ -94,7 +94,7 @@ int main(void) {
     if (score > 0) {
         printf("\ndamn, luck was LITERALLY on your side\n");
     } else {
-        printf("\nig it's your unlucky day today.\n");
+        printf("\ni guess it's your unlucky day today.\n");
     }
     return 0;
 }
