@@ -5,3 +5,9 @@ UseTab: Never
 PPIndentWidth: 1
 IndentPPDirectives: AfterHash
 IndentCaseLabels: true
+AllowShortCaseLabelsOnASingleLine: true
+AlignConsecutiveShortCaseStatements:
+    Enabled: true
+    AcrossEmptyLines: true
+    AcrossComments: true
+    AlignCaseColons: true
