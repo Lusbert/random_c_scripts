@@ -11,3 +11,10 @@ AlignConsecutiveShortCaseStatements:
     AcrossEmptyLines: true
     AcrossComments: true
     AlignCaseColons: true
+AllowShortEnumsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Always
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AlignConsecutiveAssignments:
+    Enabled: true
+    AcrossEmptyLines: true
+    AcrossComments: true
