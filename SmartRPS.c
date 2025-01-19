@@ -76,8 +76,7 @@ int main(void) {
         } else {
             puts("You lose");
             score--;
-            hand = (hand - 1) % 3; // moves forward
-            // spent 10 minutes trying to figure this out, succumbed and asked ChatGPT, it was smth as simple as a `+3`
+            hand = (hand + 1) % 3; // moves forward
         }
         printf("Current Score: %d\n" "> ", score);
     } while (score > -3 && score < 3);
