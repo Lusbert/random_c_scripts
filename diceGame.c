@@ -22,16 +22,38 @@ void printTable(int *scoreP1, int *scoreP2) {
 
 int roll(int *total) {
     int rolled = 0;
-    /* clang-format off */
     switch (rand() % 6) {
-        case 1 : printf("Player rolled the dice and got " GREEN "2" RESET "\n"); *total += 2; rolled = 1; break;
-        case 0 : printf("Player rolled the dice and got " GREEN "1" RESET "\n"); *total += 1; rolled = 0; break;
-        case 2 : printf("Player rolled the dice and got " GREEN "3" RESET "\n"); *total += 3; rolled = 2; break;
-        case 3 : printf("Player rolled the dice and got " GREEN "4" RESET "\n"); *total += 4; rolled = 3; break;
-        case 4 : printf("Player rolled the dice and got " GREEN "5" RESET "\n"); *total += 5; rolled = 4; break;
-        case 5 : printf("Player rolled the dice and got " GREEN "6" RESET "\n"); *total += 6; rolled = 5; break;
+        case 1:
+            printf("Player rolled the dice and got " GREEN "2" RESET "\n");
+            *total += 2;
+            rolled = 1;
+            break;
+        case 0:
+            printf("Player rolled the dice and got " GREEN "1" RESET "\n");
+            *total += 1;
+            rolled = 0;
+            break;
+        case 2:
+            printf("Player rolled the dice and got " GREEN "3" RESET "\n");
+            *total += 3;
+            rolled = 2;
+            break;
+        case 3:
+            printf("Player rolled the dice and got " GREEN "4" RESET "\n");
+            *total += 4;
+            rolled = 3;
+            break;
+        case 4:
+            printf("Player rolled the dice and got " GREEN "5" RESET "\n");
+            *total += 5;
+            rolled = 4;
+            break;
+        case 5:
+            printf("Player rolled the dice and got " GREEN "6" RESET "\n");
+            *total += 6;
+            rolled = 5;
+            break;
     }
-    /* clang-format on */
     return rolled;
 }
 
@@ -68,7 +90,7 @@ void doRound(int *score, int *lossCheck) {
                *score);
         *lossCheck = 1;
     }
-    if (*lossCheck != 1) printf("Their score is now " BLUE "%d" RESET "\n", *score);
+    if (*lossCheck != 1) { printf("Their score is now " BLUE "%d" RESET "\n", *score); }
 }
 
 void game(int *lossCheck, int *scoreP1, int *scoreP2, int *i) {
@@ -76,7 +98,7 @@ void game(int *lossCheck, int *scoreP1, int *scoreP2, int *i) {
 
     printf("\n" BOLD BLUE "Player 1" RESET " is playing, with a current score of " BOLD BLUE "%d" RESET "\n\n",
            *scoreP1);
-    doRound(&*scoreP1, &*lossCheck);
+    doRound(scoreP1, lossCheck);
     if (*lossCheck == 1) {
         printf("\n" BOLD RED "Player 1" RESET " has lost\n");
         exit(EXIT_FAILURE);
@@ -85,7 +107,7 @@ void game(int *lossCheck, int *scoreP1, int *scoreP2, int *i) {
 
     printf("\n" BOLD BLUE "Player 2" RESET " is playing, with a current score of " BOLD BLUE "%d" RESET "\n\n",
            *scoreP2);
-    doRound(&*scoreP2, &*lossCheck);
+    doRound(scoreP2, lossCheck);
     if (*lossCheck == 1) {
         printf("\n" BOLD RED "Player 2" RESET " has lost\n");
         exit(EXIT_FAILURE);
